@@ -10,7 +10,7 @@ export default function AdminDashboard() {
 
   const fetchApplications = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/applications')
+      const res = await fetch('https://passport-backend-1mhm.onrender.com/api/applications')
       const data = await res.json()
       setApplications(data)
     } catch (err) {
@@ -20,7 +20,7 @@ export default function AdminDashboard() {
 
   const handleStatusUpdate = async (appId, status) => {
     try {
-      const res = await fetch(`http://localhost:8000/api/applications/${appId}?status=${status}`, {
+      const res = await fetch(`https://passport-backend-1mhm.onrender.com/api/applications/${appId}?status=${status}`, {
         method: 'PUT'
       })
 

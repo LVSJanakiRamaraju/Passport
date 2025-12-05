@@ -18,7 +18,7 @@ export default function SignIn({ setUser }) {
     setSuccess(false)
 
     try {
-      const res = await fetch('http://localhost:8000/api/signup', {
+      const res = await fetch('https://passport-backend-1mhm.onrender.com/api/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

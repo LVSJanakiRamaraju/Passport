@@ -11,7 +11,7 @@ export default function Login({ setUser }) {
     setError('')
 
     try {
-      const res = await fetch('http://localhost:8000/api/login', {
+      const res = await fetch('https://passport-backend-1mhm.onrender.com/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

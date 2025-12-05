@@ -21,7 +21,7 @@ export default function Application({ user }) {
     setSuccess(false)
 
     try {
-      const res = await fetch('http://localhost:8000/api/applications', {
+      const res = await fetch('https://passport-backend-1mhm.onrender.com/api/applications', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
